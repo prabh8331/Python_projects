@@ -12,6 +12,7 @@ Hello,
 1. vscode step
 * p1
 * p2
+* p3
 
 <https://mstream.prabh.de/>
 

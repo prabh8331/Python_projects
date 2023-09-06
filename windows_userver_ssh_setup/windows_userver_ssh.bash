@@ -1,1 +1,0 @@
-ssh-copy-id userver@192.168.1.111

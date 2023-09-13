@@ -14,7 +14,7 @@ sudo nano /etc/apache2/ports.conf
 
 
 Step 2: Create Website Directory
-sudo mkdir -p /var/www/mywebsite
+sudo mkdir -p /var/www/mywebsite 
 
 
 ### display network socket information

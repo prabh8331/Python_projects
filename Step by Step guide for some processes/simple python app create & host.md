@@ -333,3 +333,9 @@ sudo systemctl start apache2
 
 
 at one time only one application could use one virtual env 
+
+
+
+
+sudo chown -R userver:userver /home/userver/Python_projects/python_applications_dev_server/my_flask_app
+

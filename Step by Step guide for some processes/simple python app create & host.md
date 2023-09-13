@@ -339,3 +339,11 @@ at one time only one application could use one virtual env
 
 sudo chown -R userver:userver /home/userver/Python_projects/python_applications_dev_server/my_flask_app
 
+
+
+Rebase onto the Remote Branch: Another option is to rebase your local branch onto the remote branch. This will rewrite your commit history to make it appear as if your local changes were made on top of the remote changes. Here's how you can do it:
+
+bash
+Copy code
+git pull --rebase origin main
+Again, if there are conflicts during the rebase, you will need to resolve them.

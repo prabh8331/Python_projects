@@ -287,6 +287,24 @@ deactivate
 
 
 
+sudo chown -R userver:userver /home/virtual_environments 
+cd /home/virtual_environments
+
+virtualenv venv_my_flask_app
+
+source /home/virtual_environments/venv_my_flask_app/bin/activate
+
+cd /var/www/my_flask_app/
+
+pip install flask
+python run.py
+deactivate
+
+
+
+
+
+
 #!/usr/bin/python3
 import sys
 sys.path.insert(0, '/home/userver/Python_projects/First_python_simple_application_host')

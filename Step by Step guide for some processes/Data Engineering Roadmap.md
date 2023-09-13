@@ -1,10 +1,11 @@
-### I am starting 3 thing in bellow roadmap
+### In progress tasks from roadmap below
 1. AWS
 2. Python 
 3. Use git for above two
 
 
-**1. Advanced SQL and Database Management:**
+
+# **1. Advanced SQL and Database Management:**
    - Deepen your SQL skills by learning about advanced querying techniques, indexing, optimization, and data modeling.
    - Explore different types of databases such as NoSQL (MongoDB, Cassandra) and NewSQL (CockroachDB, Spanner).
 

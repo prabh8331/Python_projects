@@ -303,3 +303,18 @@ from app import app as application
 sudo usermod -a -G userver www-data
 
 sudo systemctl restart apache2
+
+
+
+
+
+
+
+
+to close any website 
+sudo a2dissite my_flask_app
+
+sudo systemctl start apache2
+
+
+at one time only one application could use one virtual env 

@@ -8,7 +8,7 @@ sudo systemctl status apache2
 
 change port remove port 80 and replace by any other port
 sudo nano /etc/apache2/ports.conf
-      Listen 8080
+      Listen 6060
 
 
 
@@ -42,6 +42,9 @@ Add the following content to the index.html file:
 </body>
 </html>
 
+
+
+
 Step 4: Configure Apache
 sudo nano /etc/apache2/sites-available/mywebsite.conf
 Add the following content to the configuration file, specifying port 6060:
@@ -54,6 +57,8 @@ Add the following content to the configuration file, specifying port 6060:
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+
+
 
 
 Step 5: Enable the Virtual Host
@@ -69,10 +74,10 @@ sudo systemctl restart apache2
 access your website by navigating to http://192.168.1.36:6060
 
 
+__________end_________________
 
 
-
-
+------------ not used yet ----------------
 
 Install Nginx:
 sudo apt update

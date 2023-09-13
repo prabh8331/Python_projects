@@ -1,8 +1,4 @@
-Certainly! Here's a step-by-step guide for creating a simple Python application that takes two values as input, concatenates them, and prints the result. We'll also cover how to host this application using Flask and Apache2 on port 222. I'll include folder structure guidance as well.
-
 **Step 1: Install Flask:**
-
-If you haven't already, you'll need to install Flask, a Python web framework. You can do this using pip:
 
 ```bash
 pip install Flask
@@ -13,13 +9,14 @@ pip install Flask
 Create a folder for your project and create the following structure:
 
 ```
-my_concatenator_app/
+/var/www/my_flask_app/
     +-- app/
-    ¦   +-- __init__.py
-    ¦   +-- routes.py
-    ¦   +-- templates/
-    ¦       +-- index.html
+    ï¿½   +-- __init__.py
+    ï¿½   +-- routes.py
+    ï¿½   +-- templates/
+    ï¿½       +-- index.html
     +-- run.py
+    +-- run.wsgi
     +-- venv/ (Virtual Environment)
 ```
 

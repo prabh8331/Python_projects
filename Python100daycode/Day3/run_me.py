@@ -1,10 +1,4 @@
-## Tresure Island
-
-Link to asii arts <https://ascii.co.uk/art>
-
-
-``` py
-
+### this is run_me file, 
 print("""
   ____________________________________________________________________
  / \-----     ---------  -----------     -------------- ------    ----\
@@ -56,5 +50,3 @@ if choice1 == "left":
 else:
     print("Fall into a hole.\nGame Over.")
 
-
-```

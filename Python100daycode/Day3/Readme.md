@@ -1,7 +1,6 @@
 ##Tresure Island
 
-    Link to asii arts 
-    <https://ascii.co.uk/art>
+Link to asii arts <https://ascii.co.uk/art>
 
 
 ``` py

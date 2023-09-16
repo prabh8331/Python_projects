@@ -25,10 +25,8 @@ print(a_module.pi)
 ```
 
 
-``` md 
-`main.py` is usually the entry point, it could be different (`__init__.py`) but enty point is
+#### `main.py` is usually the entry point, it could be different (`__init__.py`) but enty point is
 a file which will be executed when we run our code  
-```
 
 
 ``` py main.py

@@ -29,12 +29,27 @@ print(a_module.pi)
 but enty point is a file which will be executed when we run our code
 
 
-``` py main.py
+### Random Module
+`main.py:`
+``` py 
 
 import random 
 
-random_interger = random.randint(1,10)
+random_interger = random.randint(1,10)  #this will generate random interg b/w 1 and 10
 print(random_interger)
 
+random_float = random.random()   # this will generate random flaod b/w 0 and 1 but will not inclured 1 will be like 0.9999999 etc. 
+print(random_float)
+
+# Random b/w 0 and 5
+random_float5=random_float*5
+print(random_float5)
+
+# example roll a dice  
+dice_roll = random.randint(1,6)
+print(f"you got {dice_roll}")
+
 ```
+
+### Heads or Tails 
 

@@ -5,7 +5,9 @@ Python use **Mersenne Twister** pseudorandom rumber generator, we will use rando
 ```
 
 ```md
-In Python, a **module** is a file containing Python code that can include functions, classes, and variables. Modules are used to organize and encapsulate related pieces of code into reusable units. They help in keeping code clean, maintainable, and logically structured. 
+In Python, a **module** is a file containing Python code that can include functions, classes,
+and variables. Modules are used to organize and encapsulate related pieces of code into 
+reusable units. They help in keeping code clean, maintainable, and logically structured. 
 ```
 
 

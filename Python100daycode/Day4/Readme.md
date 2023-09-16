@@ -11,10 +11,6 @@ reusable units. They help in keeping code clean, maintainable, and logically str
 ```
 
 
-``` md 
-`main.py` is usually the entry point, it could be different (`__init__.py`) but enty point is a file which will be executed when we run our code  
-```
-
 ### Create your own module 
 `a_module.py:`
 ```py 
@@ -26,6 +22,12 @@ pi = pi = 3.14159246
 import a_module
 
 print(a_module.pi)
+```
+
+
+``` md 
+`main.py` is usually the entry point, it could be different (`__init__.py`) but enty point is
+a file which will be executed when we run our code  
 ```
 
 

@@ -16,11 +16,13 @@ reusable units. They help in keeping code clean, maintainable, and logically str
 ```
 
 ### Create your own module 
-```py a_module.py
+`a_module.py:`
+```py 
 pi = pi = 3.14159246
 ```
 
-``` py main.py
+`main.py:`
+``` py 
 import a_module
 
 print(a_module.pi)

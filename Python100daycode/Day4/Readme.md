@@ -12,7 +12,7 @@ reusable units. They help in keeping code clean, maintainable, and logically str
 
 
 ### Create your own module 
-[`Python_module_examples\a_module.py`](a_module.py)
+[`Python_module_examples\a_module.py`](Python_module_examples\a_module.py)
 `a_module.py:`
 ```py 
 pi = pi = 3.14159246

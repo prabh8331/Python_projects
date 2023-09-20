@@ -10,7 +10,7 @@ Make Flow charts here: <https://app.diagrams.net/>
     5. Then only we will add the full functionality. <br>
     6. Once complete functionality is integrated remove the unwanted comments and testing code, <br>
     7. Keep the comment which explains the code.
-<details>
+</details>
 
 
 ### Hangman Game coding
@@ -36,6 +36,9 @@ Make Flow charts here: <https://app.diagrams.net/>
 #### Hangman Flow chart 
 <img src="Flow_chart/Hangman_Flowchart.png" alt="Hangman flow" width="400" >
 
+#### Full working code 
+
+[`Hangman_full_game`](Hangman_full_game)
 
 #### Breakdown 1 - Picking a Random Words and Checking Answers 
 

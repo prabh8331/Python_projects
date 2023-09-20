@@ -278,6 +278,8 @@ Then only we will add the full functionality.
 Once complete functionality is integrated remove the unwanted comments and testing code, <br>
 Keep the comment which explains the code.
 
+import statement documentation: <https://www.askpython.com/python/python-import-statement>
+
 ```py
 #Step 5
 import os 

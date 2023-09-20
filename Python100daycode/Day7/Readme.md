@@ -1,6 +1,17 @@
 ## Breakdown a Complex problem into a flow chart 
 Make Flow charts here: <https://app.diagrams.net/>
 
+<details>
+    <summary>Summary of main Learnings:</summary>
+    1. First breakdown the complex problem into small tasks <br>
+    2. Create a flow chart of problem <br>
+    3. Achieve each subtasks and see if logic is working fine    <br>
+    4. Once we got all the logic down and everything is working as expected , <br> 
+    5. Then only we will add the full functionality. <br>
+    6. Once complete functionality is integrated remove the unwanted comments and testing code, <br>
+    7. Keep the comment which explains the code.
+<details>
+
 
 ### Hangman Game coding
 

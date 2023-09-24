@@ -147,3 +147,82 @@ prime_checker(number=n)
 
 
 ```
+
+
+Get the index of the list: <https://www.w3schools.com/python/ref_list_index.asp>
+
+- Breakdown1: Create a encrypt function which takes "text" and "shift" as input. Bug alert: if encode "z" it will give the "IndexError: list index out of range" error
+- Breakdown2: Create a decrypt function and when direction is "decode" then call decrypt else if its "encode" call encrypt function 
+
+```py
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+text = input("Type your message:\n").lower()
+shift = int(input("Type the shift number:\n"))
+
+
+def encrypt(plain_text,shift_amount):
+    cipher_text=""
+    for letter in plain_text:
+            position=alphabet.index(letter)
+            new_position=position+shift_amount
+            if new_position > 25:
+                  multiple=(new_position+1)//26
+                  new_position=new_position-26*multiple
+            cipher_text+=alphabet[new_position]
+    print(f"The encoded text is {cipher_text}")
+
+
+def decrypt(cipher_text,shift_amount):
+    plain_text=""
+    for letter in cipher_text:
+            position=alphabet.index(letter)
+            new_position=position-shift_amount
+            if new_position < 0:
+                  multiple=(new_position+1)//26
+                  new_position=new_position-26*multiple
+            plain_text+=alphabet[new_position]
+    print(f"The decoded text is {plain_text}")
+
+
+if direction == "encode":
+      encrypt(text,shift)
+elif direction == "decode":
+      decrypt(text,shift)
+else:
+      print("Wrong input!")
+
+```
+
+- Breakdown3: As encrypt and decrypt both are smiler function and logic is matching merge both the above tasks. Create function caesar(), which takes inputs of  'text', 'shift' and 'direction'.
+
+```py
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+text = input("Type your message:\n").lower()
+shift = int(input("Type the shift number:\n"))
+
+
+def caesar(input_text,shift_amount,which_direction):
+    output_text=""
+    if which_direction == "decode":
+          shift_amount*=-1
+    for letter in input_text:
+            position=alphabet.index(letter)
+            new_position=position+shift_amount
+            if new_position > 25 or new_position < 0:
+                  multiple=(new_position+1)//26
+                  new_position=new_position-26*multiple
+            output_text+=alphabet[new_position]
+    if which_direction in ["encode","decode"]:
+        print(f"The {which_direction}d text is {output_text}")
+    else:
+        print("Wrong Input, Try again!")
+
+caesar(text,shift,direction)
+
+```
+
+- Breakdown4: Final code

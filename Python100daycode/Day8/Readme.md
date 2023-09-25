@@ -227,5 +227,5 @@ caesar(text,shift,direction)
 
 - Breakdown4: User Experience Improvements, print logo when program start,  Ask user if they want to restart the program, improve code even if user enters number/symbol/space
 
-[] [main.py](caesar_cipher_program/main.py)
-[] [art.py](caesar_cipher_program/art.py)
+- [ ] [main.py](caesar_cipher_program/main.py)
+- [ ] [art.py](caesar_cipher_program/art.py)

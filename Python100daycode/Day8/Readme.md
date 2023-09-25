@@ -195,7 +195,7 @@ else:
 
 ```
 
-- Breakdown3: As encrypt and decrypt both are smiler function and logic is matching merge both the above tasks. Create function caesar(), which takes inputs of  'text', 'shift' and 'direction'.
+- Breakdown3: As encrypt and decrypt both are smiler function and logic is matching we will reorganize the code and merge both. Create function caesar(), which takes inputs of  'text', 'shift' and 'direction'.
 
 ```py
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
@@ -225,4 +225,7 @@ caesar(text,shift,direction)
 
 ```
 
-- Breakdown4: Final code
+- Breakdown4: User Experience Improvements, print logo when program start,  Ask user if they want to restart the program, improve code even if user enters number/symbol/space
+
+[] [main.py](caesar_cipher_program/main.py)
+[] [art.py](caesar_cipher_program/art.py)

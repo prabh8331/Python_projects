@@ -107,3 +107,40 @@ travel_log = [
 
 #only down side of mixing datatype in dictionary is you should know what datatype is that
 ```
+
+#### Define function to add new values is nested 
+
+```py 
+travel_log = [
+{
+  "country": "France",
+  "visits": 12,
+  "cities": ["Paris", "Lille", "Dijon"]
+},
+{
+  "country": "Germany",
+  "visits": 5,
+  "cities": ["Berlin", "Hamburg", "Stuttgart"]
+},
+]
+
+#TODO: Write the function that will allow new countries to be added to the travel_log.
+
+def add_new_country(country, visits,cities):
+    travel_log.append({"country": country,"visits": visits,"cities": cities})
+
+## or
+
+def add_new_country(country, visits, cities):
+    country_visit={}
+    country_visit["country"]=country
+    country_visit["visits"]=visits
+    country_visit["cities"]=cities
+    travel_log.append(country_visit)
+
+
+add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
+print(travel_log)
+
+```
+

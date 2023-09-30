@@ -1,5 +1,6 @@
-
+from art import logo
 #### Calculator project 
+
 
 ##add
 def add(n1,n2):
@@ -26,6 +27,7 @@ operations={
 }
 
 def calculator():
+  print(logo)
   num1 = float(input("What's the first number?: "))
 
   for operation in operations:
@@ -52,18 +54,4 @@ def calculator():
         calculator()
       
 
-
-## Infinite loop warning for recursive functions - there should be some sort of condition which should met to call/exit from recursive function 
-
-#Recursion functions , a recursive function is a function that calls itself e.g. 
-
-
-def factorial(n):
-    # Base case: If n is 0 or 1, return 1.
-    if n == 0 or n == 1:
-        return 1
-    # Recursive case: Multiply n by the factorial of (n-1).
-    else:
-        return n * factorial(n-1)
-
-  
+calculator()

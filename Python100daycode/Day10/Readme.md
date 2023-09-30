@@ -80,7 +80,7 @@ print(days)
 #### Docstrings 
 Docstring is a way to maintain documentation of function or other block of code
 
-can also use it as a multiline comments
+Can also use it as a multiline comments,  But in official python doc it is not recommended
 
 ```py
 def is_leap(year):
@@ -95,5 +95,25 @@ def is_leap(year):
       return(True)
   else:
     return(False)
+
+```
+
+#### Calculator project 
+
+```py
+
+## Infinite loop warning for recursive functions - there should be some sort of condition which should met to call/exit from recursive function 
+
+#Recursion functions , a recursive function is a function that calls itself e.g. 
+
+
+def factorial(n):
+    # Base case: If n is 0 or 1, return 1.
+    if n == 0 or n == 1:
+        return 1
+    # Recursive case: Multiply n by the factorial of (n-1).
+    else:
+        return n * factorial(n-1)
+
 
 ```

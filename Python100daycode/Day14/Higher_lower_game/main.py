@@ -1,3 +1,11 @@
+# 1. breakdown the problem 
+# 2. Make a todo list
+# 3. Start with the easiest one 
+# 4. turn the problem into comments 
+# 5. Write code --> Run code--> Fix code  and repeate 
+# 6. Next Task
+
+
 # Welcome msg import logo & vs from art.py
 from art import logo, vs
 from game_data import data

@@ -57,33 +57,26 @@ while continue_game == True:
     print(f"Against B: {data[word2]['name']}, a {data[word2]['description']}, from {data[word2]['country']}.")
     compare=input("Who has more followers? Type 'A' or 'B': ").lower()
 
+    system('cls')
+    print(logo)
+    
     if compare == 'a':
         if data[word1]['follower_count'] > data[word2]['follower_count']:
             score+=1
-            system('cls')
-            print(logo)
             print(f"You're right! Current score: {score}.")
         else:
             continue_game = False
-            system('cls')
-            print(logo)
             print(f"Sorry, that's wrong. Final score: {score}")
 
     elif compare == 'b':
         if data[word2]['follower_count'] > data[word1]['follower_count']:
             score+=1
-            system('cls')
-            print(logo)
             print(f"You're right! Current score: {score}.")
         else:
             continue_game = False
-            system('cls')
-            print(logo)
             print(f"Sorry, that's wrong. Final score: {score}")
     
     else:
-        system('cls')
-        print(logo)
         print(f"Sorry, that's wrong. Final score: {score}")
 
 

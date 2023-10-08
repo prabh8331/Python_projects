@@ -75,7 +75,7 @@ while continue_game is True:
             print(f"You're right! Current score: {score}.")
         else:
             continue_game = False
-            print(f"Sorry, that's wrong. Final score: {score}")
+            print(f"Sorry, that's wrong. Final score: {score}") 
     else:
         print(f"Sorry, that's wrong. Final score: {score}")
 
@@ -89,8 +89,13 @@ while continue_game is True:
 
 
     
-    # b/w word 1 and word 2 there should be vs
+    #TODO b/w word 1 and word 2 there should be vs 
 
     # there should be two variables word 1 and word 2, after all the ans word 1 should = word 2   and word 2 be random 
 
     # if condition - if player ans is wrong then this condition will get true and variable = False 
+
+    # FIXME 
+
+    # NOTE 
+    # BUG

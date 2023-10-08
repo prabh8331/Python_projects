@@ -2,7 +2,7 @@
 # 2. Make a todo list
 # 3. Start with the easiest one 
 # 4. turn the problem into comments 
-# 5. Write code --> Run code--> Fix code  and repeate 
+# 5. Write code --> Run code--> Fix code  and repeat 
 # 6. Next Task
 
 

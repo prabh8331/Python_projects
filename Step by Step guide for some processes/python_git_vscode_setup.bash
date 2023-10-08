@@ -109,3 +109,16 @@ Putty ssh setup with puttykeygen
 
 
 
+
+#####Vs code setup 
+vscode setup - 
+open extensions (ctrl+shift+x) - install "Remote-SSH" 
+
+
+
+# Functionalities
+1. Spell Check - 
+  Extenxion -> code spell checker
+2. More space - split screen 
+3. Built-in linter 
+  Extenxion for pyton to apply PEP 8 style guide --> 

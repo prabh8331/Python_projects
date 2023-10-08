@@ -3,6 +3,11 @@
 vscode setup -
 open extensions (ctrl+shift+x) - install "Remote-SSH"
 
+- [Vs code setup](#vs-code-setup)
+  - [Functionalities](#functionalities)
+  - [todo tree](#todo-tree)
+
+
 ## Functionalities
 
 1. Spell Check -
@@ -14,6 +19,12 @@ open extensions (ctrl+shift+x) - install "Remote-SSH"
 5. View structure -  use outline functionality
 6. Rename a function - use F2 key to rename a function
 7. todo tree - extension todo tree
+8. Markdown shortcuts and lint 
+   - [ ] - mark this done by alt+c 
+   - **bold** ctrl + b
+   - 
+
+## todo tree
 
 ``` txt
 #TODO

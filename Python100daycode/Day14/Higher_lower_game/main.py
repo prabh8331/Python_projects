@@ -19,48 +19,47 @@ print(logo)
 # then reset and again do the same
 
 record = []
-word1 = r.randint(0,len(data)-1)
+word1 = r.randint(0, len(data) - 1)
 record.append(word1)
-word2= r.randint(0,len(data)-1)
+word2 = r.randint(0, len(data) - 1)
 
 while word2 in record:
-    word2 = r.randint(0,len(data)-1)
+    word2 = r.randint(0, len(data) - 1)
 
 record.append(word2)
 
 
-def word2_selection(word1,word2):
-    if len(data)==len(record):
+def word2_selection(word1_input, word2_input):
+    if len(data) == len(record):
         record.clear()
-        record.append(word1)
-        word2= r.randint(0,len(data)-1)
-        while word1 == word2:
-            word2= r.randint(0,len(data)-1)
+        record.append(word1_input)
+        word2_input = r.randint(0, len(data) - 1)
+        while word1_input == word2_input:
+            word2_input = r.randint(0, len(data) - 1)
     else:
-        while word2 in record:
-            word2 = r.randint(0,len(data)-1)
+        while word2_input in record:
+            word2_input = r.randint(0, len(data) - 1)
 
-    return word2
+    return word2_input
 
 
 # a variable = True which become False when player give wrong input 
 continue_game = True
 score = 0
 
-
 # Create a while loop which will run until game is over
 while continue_game is True:
     print(f"Compare A: {data[word1]['name']}, a {data[word1]['description']}, from {data[word1]['country']}.")
     print(vs)
     print(f"Against B: {data[word2]['name']}, a {data[word2]['description']}, from {data[word2]['country']}.")
-    compare=input("Who has more followers? Type 'A' or 'B': ").lower()
+    compare = input("Who has more followers? Type 'A' or 'B': ").lower()
 
     system('cls')
     print(logo)
-    
+
     if compare == 'a':
         if data[word1]['follower_count'] > data[word2]['follower_count']:
-            score+=1
+            score += 1
             print(f"You're right! Current score: {score}.")
         else:
             continue_game = False
@@ -68,31 +67,27 @@ while continue_game is True:
 
     elif compare == 'b':
         if data[word2]['follower_count'] > data[word1]['follower_count']:
-            score+=1
+            score += 1
             print(f"You're right! Current score: {score}.")
         else:
             continue_game = False
-            print(f"Sorry, that's wrong. Final score: {score}") 
+            print(f"Sorry, that's wrong. Final score: {score}")
     else:
         print(f"Sorry, that's wrong. Final score: {score}")
 
-
     word1 = word2
 
-    word2 = word2_selection(word1,word2)
+    word2 = word2_selection(word1, word2)
 
     record.append(word2)
 
+# TODO b/w word 1 and word 2 there should be vs
 
+# there should be two variables word 1 and word 2, after all the ans word 1 should = word 2   and word 2 be random
 
-    
-    #TODO b/w word 1 and word 2 there should be vs 
+# if condition - is player ans is wrong then this condition will get true and variable = False
 
-    # there should be two variables word 1 and word 2, after all the ans word 1 should = word 2   and word 2 be random 
+# FIXME
 
-    # if condition - if player ans is wrong then this condition will get true and variable = False 
-
-    # FIXME 
-
-    # NOTE 
-    # BUG
+# NOTE
+# BUG

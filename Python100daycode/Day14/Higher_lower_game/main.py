@@ -10,10 +10,7 @@ from os import system
 # 5. Write code --> Run code--> Fix code  and repeat
 # 6. Next Task
 
-
 # Welcome msg import logo & vs from art.py
-
-
 
 print(logo)
 

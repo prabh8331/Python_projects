@@ -1,16 +1,18 @@
-# 1. breakdown the problem 
+import random as r
+from art import logo, vs
+from game_data import data
+from os import system
+
+# 1. breakdown the problem
 # 2. Make a todo list
-# 3. Start with the easiest one 
-# 4. turn the problem into comments 
-# 5. Write code --> Run code--> Fix code  and repeat 
+# 3. Start with the easiest one
+# 4. turn the problem into comments
+# 5. Write code --> Run code--> Fix code  and repeat
 # 6. Next Task
 
 
 # Welcome msg import logo & vs from art.py
-from art import logo, vs
-from game_data import data
-import random as r
-from os import system
+
 
 
 print(logo)
@@ -50,8 +52,7 @@ score = 0
 
 
 # Create a while loop which will run until game is over
-while continue_game == True:
-    
+while continue_game is True:
     print(f"Compare A: {data[word1]['name']}, a {data[word1]['description']}, from {data[word1]['country']}.")
     print(vs)
     print(f"Against B: {data[word2]['name']}, a {data[word2]['description']}, from {data[word2]['country']}.")
@@ -75,7 +76,6 @@ while continue_game == True:
         else:
             continue_game = False
             print(f"Sorry, that's wrong. Final score: {score}")
-    
     else:
         print(f"Sorry, that's wrong. Final score: {score}")
 
@@ -89,7 +89,7 @@ while continue_game == True:
 
 
     
-    # b/w word 1 and word 2 there should be vs 
+    # b/w word 1 and word 2 there should be vs
 
     # there should be two variables word 1 and word 2, after all the ans word 1 should = word 2   and word 2 be random 
 

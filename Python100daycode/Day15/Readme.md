@@ -7,7 +7,6 @@ open extensions (ctrl+shift+x) - install "Remote-SSH"
   - [Functionalities](#functionalities)
   - [todo tree](#todo-tree)
 
-
 ## Functionalities
 
 1. Spell Check -

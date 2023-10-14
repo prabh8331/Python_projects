@@ -101,10 +101,10 @@ while CONTINUE_MACHINE:
     choice = input("What would you like? (espresso/latte/cappuccino): ").lower()
 
     if choice == "report":
-        print(f"Water: {resources['water']}")
-        print(f"Milk: {resources['milk']}")
-        print(f"Coffee: {resources['coffee']}")
-        print(f"Money: {money}")
+        print(f"Water: {resources['water']}ml")
+        print(f"Milk: {resources['milk']}ml")
+        print(f"Coffee: {resources['coffee']}g")
+        print(f"Money: ${money}")
     elif choice in ["espresso", "latte", "cappuccino"]:
         if check_resources(choice):
             money += coin_process()
@@ -113,6 +113,7 @@ while CONTINUE_MACHINE:
                 resources = transaction(resources, choice)
             else:
                 print("Sorry that's not enough money. Money refunded")
-
+    elif choice == "off":
+        CONTINUE_MACHINE = False
     else:
         print("Error: Invalid input!")

@@ -18,6 +18,7 @@ question_data_old = [
 ####  trivia database -->  https://opentdb.com/    --> API ---> update the API parameters (select type = True/false)--> 
 #### Generate the api url -->copy anp and paste on new tab --> copy that data and paste here . 
 
+### following is the data in JSON format i.e. java script object notation 
 
 question_data = {
     "response_code": 0,
@@ -126,5 +127,5 @@ question_data = {
 }
 
 
-print(question_data["results"][0]["question"])
-print(question_data["results"][0]["correct_answer"])
+# print(question_data["results"][0]["question"])
+# print(question_data["results"][0]["correct_answer"])

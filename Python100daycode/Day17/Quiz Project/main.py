@@ -23,6 +23,9 @@ for qn in question_data:
     question_bank.append(new_question)
 
 
+## The advantages of Object Oriented Programming OOP - we didn't had to change any of our module just main.py
+## this is the modularity at its best 
+
 quiz=QuizBrain(question_bank)
 
 quiz.next_question()

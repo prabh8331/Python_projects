@@ -1,4 +1,6 @@
-from turtle import Turtle, Screen
+from turtle import Turtle, Screen, colormode
+
+from random import randint
 
 tim = Turtle()
 
@@ -29,11 +31,14 @@ tim.color("red")
 #     tim.fd(5)
 #     tim.pendown()
 
-
+r = randint(0, 255)
+g = randint(0, 255)
+b = randint(0, 255)
+tim.color(r, g, b)
 
 # Draw the multiples polygons 
 
-for i in range(3,18):
+for i in range(3,11):
     tim.setheading(0)
     for j in range(i):
         if(j%2==0):

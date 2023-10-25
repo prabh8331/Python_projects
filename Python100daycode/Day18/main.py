@@ -51,25 +51,23 @@ tim = Turtle()
 
 #tim.right(90)
 
-tim.color(color_tuple[1])
-
 steps  = 10
 
-tim.penup()
-
-#tim.goto(-225,-225)
-
-tim.setx(-225)
-tim.sety(-225)
+y=0
 
 for _ in range(steps):
-    tim.color(choice(color_tuple))
-    #tim.left(angle)
-    tim.dot(20)
     tim.penup()
-    tim.fd(50)
+    tim.setx(-225)
+    tim.sety(-225+y)
     tim.pendown()
-
+    for _ in range(steps):
+        tim.color(choice(color_tuple))
+        #tim.left(angle)
+        tim.dot(20)
+        tim.penup()
+        tim.fd(50)
+        tim.pendown()
+    y+=50
 
 
 screen.exitonclick()

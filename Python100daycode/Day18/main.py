@@ -34,29 +34,40 @@ color_tuple = [(210, 109, 155), (52, 137, 95), (159, 48, 82), (222, 109, 209), (
 
 screen = Screen()
 
-screen.screensize(1000,1000)
+#screen.screensize(500,500)
+
+screen.setworldcoordinates(-250, -250, 250, 250)
+#print(screen.canvheight)
+
+#print(screen.canvwidth)
 
 colormode(255)
 
 tim = Turtle()
 # shape of the curser
-tim.shape("turtle")
+#tim.shape("turtle")
 
 #tim.pensize(20)
 
+#tim.right(90)
 
 tim.color(color_tuple[1])
 
 steps  = 10
 
-tim.goto(-500,-500)
+tim.penup()
+
+#tim.goto(-225,-225)
+
+tim.setx(-225)
+tim.sety(-225)
 
 for _ in range(steps):
     tim.color(choice(color_tuple))
     #tim.left(angle)
-    tim.dot(40)
+    tim.dot(20)
     tim.penup()
-    tim.fd(100)
+    tim.fd(50)
     tim.pendown()
 
 

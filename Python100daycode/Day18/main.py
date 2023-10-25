@@ -35,8 +35,12 @@ color_tuple = [(210, 109, 155), (52, 137, 95), (159, 48, 82), (222, 109, 209), (
 screen = Screen()
 
 #screen.screensize(500,500)
+#screen.setup(width=700, height=700)
 
 screen.setworldcoordinates(-250, -250, 250, 250)
+
+#screen.tracer(0)
+
 #print(screen.canvheight)
 
 #print(screen.canvwidth)
@@ -52,6 +56,8 @@ tim = Turtle()
 #tim.right(90)
 
 steps  = 10
+
+tim.speed("fastest")
 
 y=0
 
@@ -69,5 +75,6 @@ for _ in range(steps):
         tim.pendown()
     y+=50
 
+screen.update()
 
 screen.exitonclick()

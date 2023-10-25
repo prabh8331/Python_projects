@@ -61,18 +61,22 @@ tim.speed("fastest")
 
 y=0
 
+tim.penup()
+
+tim.hideturtle()
+
 for _ in range(steps):
-    tim.penup()
+    #tim.penup()
     tim.setx(-225)
     tim.sety(-225+y)
-    tim.pendown()
+    #tim.pendown()
     for _ in range(steps):
         tim.color(choice(color_tuple))
         #tim.left(angle)
         tim.dot(20)
-        tim.penup()
+        #tim.penup()
         tim.fd(50)
-        tim.pendown()
+        #tim.pendown()
     y+=50
 
 screen.update()

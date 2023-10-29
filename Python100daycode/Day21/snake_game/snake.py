@@ -1,4 +1,10 @@
 from turtle import Turtle
+
+UP = 90
+DOWN = 270
+LEFT = 180
+RIGHT = 0
+
 class Snake:
     """Models the snake"""
     def __init__(self):
@@ -11,36 +17,34 @@ class Snake:
             self.the_snake.append(new_snake_tail)
             self.the_snake[i].goto(self.xpos,0)
             self.xpos -= 20
+        self.head = self.the_snake[0]
+        self.key_pressed = False
 
     def move_up(self):
-        if self.the_snake[0].heading() == 270:
-            pass
-        else:
-            self.the_snake[0].setheading(90)
+        if self.head.heading() != DOWN and not self.key_pressed:
+            self.head.setheading(UP)
+            self.key_pressed = True
 
     def move_down(self):
-        if self.the_snake[0].heading() == 90:
-            pass
-        else:
-            self.the_snake[0].setheading(270)
+        if self.head.heading() != UP and not self.key_pressed:
+            self.head.setheading(DOWN)
+            self.key_pressed = True
 
     def move_left(self):
-        if self.the_snake[0].heading() == 0:
-            pass
-        else:
-            self.the_snake[0].setheading(180)
+        if self.head.heading() != RIGHT and not self.key_pressed:
+            self.head.setheading(LEFT)
+            self.key_pressed = True
 
     def move_right(self):
-        if self.the_snake[0].heading() == 180:
-            pass
-        else:
-            self.the_snake[0].setheading(0)
+        if self.head.heading() != LEFT and not self.key_pressed:
+            self.head.setheading(RIGHT)
+            self.key_pressed = True
 
     def snake_move(self):
         """Moves the snake"""
 
         pos = (self.the_snake[0].xcor(),self.the_snake[0].ycor())
-        self.the_snake[0].fd(20)    
+        self.the_snake[0].fd(20)
 
         for i in range(1,len(self.the_snake)):
             pos2 = (self.the_snake[i].xcor(), self.the_snake[i].ycor())

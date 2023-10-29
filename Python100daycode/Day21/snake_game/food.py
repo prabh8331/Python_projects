@@ -1,4 +1,7 @@
+"""Generate food"""
 from turtle import Turtle
+
+from random import randint
 
 class Food(Turtle):
     """Food class is going to know how to render itself as a small circle on the screen.
@@ -9,5 +12,13 @@ class Food(Turtle):
         self.shape("circle")   # I can directly use method from Turtle class (superclass) inside the Food class (subclass) now
         self.penup()
         self.shapesize(stretch_len=0.5, stretch_wid=0.5)
-        self.color("navajo white")  
-        self.speed("fastest  bn   ")
+        self.color("navajo white")
+        self.speed("fastest")
+
+    def new_food(self):
+        """will generate new food
+        """
+        random_x = randint(-14,14)*20
+        random_y = randint(-14,14)*20
+        self.goto(random_x,random_y)
+

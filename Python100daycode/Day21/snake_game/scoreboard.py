@@ -1,6 +1,9 @@
 """Keep track of score"""
 from turtle import Turtle
 
+ALIGN = "center"
+FONT = ('Arial', 10, 'normal')
+
 class ScoreBoard(Turtle):
     """Keep track of score"""
     def __init__(self):
@@ -11,9 +14,9 @@ class ScoreBoard(Turtle):
         self.penup()
         self.goto(0,280)
         self.write(arg= f"Score: {self.score}",
-                   move=False, 
-                   align= "center", 
-                   font=('Arial', 10, 'normal'))
+                   move=False,
+                   align= ALIGN,
+                   font=FONT)
 
     def update_score(self):
         """Update the Score"""

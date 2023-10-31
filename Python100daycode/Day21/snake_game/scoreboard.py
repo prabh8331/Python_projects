@@ -23,6 +23,13 @@ class ScoreBoard(Turtle):
         self.clear()
         self.write(arg= f"Score: {self.score}",
                    move=False, 
-                   align= "center", 
-                   font=('Arial', 10, 'normal'))
-        
+                   align= ALIGN, 
+                   font=FONT)
+    
+    def game_over(self):
+        """Tells if game over"""
+        self.goto(0,0)
+        self.write(arg = "GAME OVER.",
+                   move = False,
+                   align = ALIGN,
+                   font=FONT)

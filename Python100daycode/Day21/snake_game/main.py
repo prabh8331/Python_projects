@@ -34,10 +34,28 @@ while game_is_on:
     snake.snake_move()
     #screen.update()
 
+    # detect collision with food
     if snake.head.distance(food) <5:
         score.score += 1
         food.new_food()
         score.update_score()
+        snake.extend_snake()
+
+    # detect collision with walls 
+    if snake.head.xcor() >= 290 or snake.head.xcor() <= -290 or snake.head.ycor() >= 290 or snake.head.ycor() <= -290 :
+        print("Game Over")
+        game_is_on = False
+        score.game_over()
+
+    #detect collision with tail
+    # if head collied with any segment in the tail: then game over
+    # for snake_part in snake.the_snake:
+    for snake_part in snake.the_snake[2:]:     #Slicing the list 
+        # if snake_part == snake.head:
+        #     pass
+        if snake_part.distance(snake.head) < 10:
+            game_is_on = False
+            score.game_over()
 
     screen.update()
 
@@ -47,6 +65,6 @@ while game_is_on:
     # This can happen if the key repeat rate of your keyboard is high,
     # causing multiple key events to be registered
 
-    time.sleep(0.4)
+    time.sleep(0.2)
 
 screen.exitonclick()

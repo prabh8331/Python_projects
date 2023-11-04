@@ -30,17 +30,17 @@ class Ball(Turtle):
 
 
     def move_ball(self):
-        self.fd(20)
+        self.fd(10)
 
     def ball_heading(self):
-        if 390 - self.ycor() < 20 :
+        if 400 - self.ycor() < 20 :
             #print(self.heading())
             if self.heading() == UPLEFT:
                 self.setheading(DOWNLEFT)
             if self.heading() == UPRIGHT:
                 self.setheading(DOWNRIGHT)
 
-        if self.ycor() + 390 < 20:
+        if self.ycor() + 400 < 20:
             #print(self.heading())
             if self.heading() == DOWNLEFT:
                 self.setheading(UPLEFT)

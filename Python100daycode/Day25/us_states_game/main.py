@@ -60,11 +60,16 @@ while game_is_on and score<len(state_data):
 # print(state_data["y"])
 
 # print(state_data[state_data.state])
-remaining_state = []
 
-for state in state_data["state"]:
-    if state not in guessed_state:
-        remaining_state.append(state)
+# USING LIST COMPREHENSION 
+remaining_state = [state for state in state_data["state"] if state not in guessed_state]
+
+# remaining_state = []
+
+# for state in state_data["state"]:
+#     if state not in guessed_state:
+#         remaining_state.append(state)
+
 
 
 data=pandas.DataFrame(remaining_state)

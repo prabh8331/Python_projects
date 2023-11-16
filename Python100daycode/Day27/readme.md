@@ -102,6 +102,13 @@ calculate(2, add=3, multiply=5)
 ```
 
 ### tkinter module
+
+tcl.tk orignal documatation <https://tcl.tk/man/tcl8.6/TkCmd/pack.htm>
+<https://tcl.tk/man/tcl8.6/TkCmd/entry.htm>
+
+tkinter python documation <https://docs.python.org/3/library/tkinter.html#the-packer>
+
+
 tkinter module is basically created using another technology called as tk, tk has every similar syntax as python
 So, they took all the tk commands and options and turned them into the kwargs (optional keyword arguments)
 

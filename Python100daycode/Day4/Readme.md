@@ -9,7 +9,7 @@ In Python, a **module** is a file containing Python code that can include functi
 and variables. Modules are used to organize and encapsulate related pieces of code into 
 reusable units. They help in keeping code clean, maintainable, and logically structured. 
 ```
-
+ 
 
 ### Create your own module 
 [`a_module.py:`](Python_module_examples/a_module.py)
@@ -86,7 +86,7 @@ fruits.append("Grapes")
 print(fruits)
 
 fruits.extend(["Watermelon","Strawberry","Banana"])
-print(fruits)
+print(fruits)         
 
 total_fruits = len(fruits) 
 
@@ -96,7 +96,7 @@ print(fruits[total_fruits-1]) #Banana
 # Nested list
 vegetables = ["Spinach","Kale","Tomatoes","Celery","Potatoes"]
 
-dirty_dozen = [fruits,vegrtables]
+dirty_dozen = [fruits,vegetables]
 
 print(dirty_dozen)
 
@@ -110,7 +110,8 @@ reason to start from 0 it shows the shift from left
 
 
 ### write a program that will select a random name from a list of names. The person selected will have to pay for everybody's food bill
-
+> blockquotes
+> test
 ```py
 import random
 

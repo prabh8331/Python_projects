@@ -156,3 +156,18 @@ all_aboard(4, 7, 3, 0, x=10, y=64) #4 (7, 3, 0) {'x': 10, 'y': 64}
 
 
 ```
+
+
+Layout Managers 
+
+```py
+# 1. pack -- always start from top and keeps adding new items below, but we can specify the top, left, right or bottom
+
+# 2. Place --- give the precise location, but because it is too specific that we have to work on the coordinate
+
+# 3. grid --- it imagine the window as grid and then place as per that, we can not use pack and grid in one program   # one observation, the first entry seem important, because it seems other are respective to that
+
+#Add padding into the layout
+##
+
+```

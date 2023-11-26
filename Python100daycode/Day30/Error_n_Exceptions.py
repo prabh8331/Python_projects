@@ -1,5 +1,7 @@
 #Exception Handling
 
+#FileNotFound
+#TypeError
 
 ### Index error exception handling example 
  

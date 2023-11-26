@@ -2,6 +2,14 @@
 
 
 ```py
+
+##### The try catch except finally pattern
+####try: Something that might cause an exception
+####except: Do this if there was an exception
+####else: Do this iof there were no exceptions
+####finally: Do this no matter what happens
+
+
 try:
     file = open("a_file.txt")
     a_dictionary = {"key": "value"}
@@ -17,6 +25,9 @@ else:
 finally:
     raise TypeError("This is an error that I made up.")
 
+
+# Raising your own exceptions
+
 #BMI Example
 
 height = float(input("Height: "))
@@ -27,6 +38,7 @@ if height > 3:
 
 bmi = weight / height ** 2
 print(bmi)
+
 
 
 

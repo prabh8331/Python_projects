@@ -1,4 +1,4 @@
-pip3 install requests 
+pip3 install requests
 
 [requests module docs](https://docs.python-requests.org/en/latest/)
 

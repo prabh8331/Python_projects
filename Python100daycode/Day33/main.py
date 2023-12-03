@@ -27,8 +27,8 @@ data = response.json()
 iss_longitude = float(data["iss_position"]["longitude"])
 iss_latitude = float(data["iss_position"]["latitude"])
 
-iss_longitude = 70
-iss_latitude = 22
+# iss_longitude = 70
+# iss_latitude = 22
 
 #My position
 my_latitude = 18.5894739
@@ -42,7 +42,11 @@ def iss_in_sky():
     else:
         return False
 
-
+def is_iss_overhead():
+    if (my_latitude-5 <= iss_latitude <= my_latitude+5) and ( my_longitude-5 <= iss_longitude <= my_longitude+5):
+        return True
+    else:
+        return False
 ##### API request to sunrise-sunset.org
 
 parameters = {
@@ -80,26 +84,33 @@ def is_night():
         return False
     
 
-
 import smtplib
 
 my_email = "prabh8331@gmail.com"
 
-with open("C:/Users/prabh/OneDrive/Desktop/google_app_pass.txt") as login:
-    password=login.readlines()[1].strip()
+try :
+    with open("C:/Users/prabh/OneDrive/Desktop/google_app_pass.txt") as login:
+        password=login.readlines()[1].strip()
+except FileNotFoundError:
+    with open("/home/coder/project/google_app_pass.txt") as login:
+        password=login.readlines()[1].strip()
 
-
-if iss_in_sky() and is_night():
+if is_iss_overhead() and is_night():
 
     with smtplib.SMTP("smtp.gmail.com", 587) as connection:
         connection.starttls()
         connection.login(user=my_email, password=password)
         
-        body="Hello Prabh,Look up in the sky ISS is passing through.Enjoy this Space event."
+        body="Hello Prabh, Look up in the sky ISS is passing through. Enjoy this Space event."
         
         connection.sendmail(from_addr=my_email, 
                         to_addrs="prabh8221@gmail.com", 
                         msg=f"Subject:International Space Station\n\n{body}")
+    
+    with open("Python100daycode/Day33/signal",mode="w") as file:
+        file.write("day")
 
 else:
-    print(False)
+    with open("Python100daycode/Day33/signal",mode="w") as file:
+        file.write("minute")
+

@@ -46,6 +46,13 @@ sudo nano /etc/apache2/ports.conf
 sudo apt install python3-pip
 pip install flask
 
+sudo apt install python3-virtualenv  #to create virtule env
+
+## give premission to /home/virtual_environments
+ls -ld /home/virtual_environments
+sudo chown prabh:prabh /home/virtual_environments
+sudo chmod 775 /home/virtual_environments
+
 
 ```
 
@@ -53,11 +60,13 @@ pip install flask
 ```bash
 # required Apache modules for running a Python Flask application with WSGI 
 sudo apt update
-sudo apt install libapache2-mod-wsgi
+# sudo apt install libapache2-mod-wsgi
+
+sudo apt install libapache2-mod-wsgi-py3
 
 sudo a2enmod wsgi
-sudo a2enmod proxy
-sudo a2enmod proxy_http
+# sudo a2enmod proxy
+# sudo a2enmod proxy_http
 ```
 
 

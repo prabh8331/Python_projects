@@ -61,18 +61,96 @@ sudo a2enmod proxy_http
 ```
 
 
+```bash
+
+cd /var/www/
+
+sudo mkdir password_api
+
+cd password_api/
+
+sudo nano data.json
+
+```
+`data.json`
+```json
+{
+  "Amazon": {
+    "email": "prabh8331@gmail.com",
+    "password": "ylXN0)xgOM#1o"
+  },
+  "Myntra": {
+    "email": "your_myntra_email@example.com",
+    "password": "your_myntra_password"
+  },
+  "Google": {
+    "email": "your_myntra_email@example.com",
+    "password": "your_myntra_password"
+  }
+}
+
+```
+
+```bash
+
+sudo nano main.py
+
+### paste the www_app_setup main.py
+```
 
 
 
 
 
+virtual env setup
+```bash
+cd /home/virtual_environments
+
+virtualenv password_api_venv
+
+source /home/virtual_environments/password_api_venv/bin/activate
+
+cd /var/www/password_api/
+
+pip install flask
+
+python main.py
+
+deactivate
+
+```
 
 
 
 ```bash
-# Create a new Apache configuration file
-sudo nano /etc/apache2/sites-available/password_api.conf
+sudo nano run.wsgi
 
+```
+
+```py
+
+#!/usr/bin/python3
+import sys
+import os
+
+# Adjust the path to point to your application directory
+sys.path.insert(0, '/var/www/password_api')
+
+# Activate the virtual environment
+activate_this = '/home/virtual_environments/password_api_venv/bin/activate_this.py'
+with open(activate_this) as file_:
+    exec(file_.read(), dict(__file__=activate_this))
+
+# Import the main Flask application object from your main script
+from main import app as application
+
+```
+
+
+```bash
+# Create a new Apache configuration file
+cd /etc/apache2/sites-available
+sudo nano /etc/apache2/sites-available/password_api.conf
 
 ```
 
@@ -104,5 +182,82 @@ sudo nano /etc/apache2/sites-available/password_api.conf
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+
+```
+
+
+```conf
+<VirtualHost *:8023>
+    ServerName 192.168.1.111
+
+    Options -Indexes
+
+    WSGIDaemonProcess password_api threads=5
+    WSGIScriptAlias / /var/www/password_api/run.wsgi
+
+    <Directory /var/www/password_api>
+        WSGIProcessGroup password_api
+        WSGIApplicationGroup %{GLOBAL}
+        Require all granted
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+
+```
+
+```conf
+
+<VirtualHost *:8023>
+    ServerName 192.168.1.111
+
+    Options -Indexes
+
+    WSGIDaemonProcess password_api threads=5
+    WSGIScriptAlias / /var/www/password_api/run.wsgi
+
+    <Directory /var/www/password_api>
+        WSGIProcessGroup password_api
+        WSGIApplicationGroup %{GLOBAL}
+        
+        AuthType Basic
+        AuthName "Restricted Access"
+        AuthUserFile /etc/apache2/.htpasswd
+        Require valid-user
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+
+```
+
+
+```bash
+# run this and host the password_api 
+sudo a2ensite password_api.conf
+sudo systemctl reload apache2
+
+```
+
+
+
+```bash
+sudo tail -f /var/log/apache2/error.log
+
+```
+
+```bash
+##check the premissions
+ls -l /var/www/password_api/data.json
+#-rw-r--r-- 1 www-data www-data 12345 Dec 8 16:00 /var/www/password_api/data.json
+
+
+#change the premissinos 
+sudo chown www-data:www-data /var/www/password_api/data.json
+sudo chmod 644 /var/www/password_api/data.json
 
 ```

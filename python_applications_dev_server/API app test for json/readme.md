@@ -30,6 +30,10 @@ sudo apt install apache2-utils
 sudo htpasswd -c /etc/apache2/.htpasswd prabh
 # You will be prompted to enter and confirm a password for the username.
 
+#modify passowrd
+sudo htpasswd -m /etc/apache2/.htpasswd prabh
+
+
 ```
 
 

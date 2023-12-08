@@ -4,6 +4,7 @@ import json
 # API base URL
 # api_base_url = "http://192.168.1.5:8023/api/"
 api_base_url = "http://192.168.1.111:8023/api/"
+# api_base_url = "http://192.168.1.36:8023/api/"
  
 # Endpoint URLs
 get_data_url = api_base_url + "get_data"

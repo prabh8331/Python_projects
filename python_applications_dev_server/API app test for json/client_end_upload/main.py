@@ -38,10 +38,10 @@ def update_data(website ,new_entry):
             print(f"Failed to update data. Status code: {response.status_code}")
 
 # Example: New entry for Myntra
-website_name = "Google"
+website_name = "test"
 new_myntra_entry = {
-    "email": "your_myntra_email@example.com",
-    "password": "your_myntra_password"
+    "email": "prabh8331@gmail.com",
+    "password": "test"
 }
 
 # Call the function to update data

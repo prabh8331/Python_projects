@@ -273,4 +273,46 @@ ls -l /var/www/password_api/data.json
 sudo chown www-data:www-data /var/www/password_api/data.json
 sudo chmod 644 /var/www/password_api/data.json
 
+
+
 ```
+
+
+
+
+```bash
+# making git repository of data.json in home dictory
+# paste the data file and change the running premmsion also change the main.py code
+sudo chown www-data:www-data /home/mypassdata/prabh_pass_data.json
+sudo chmod 644 /home/mypassdata/prabh_pass_data.json
+
+
+sudo nano update.txt
+sudo chown www-data:www-data /home/mypassdata/update.txt
+sudo chmod 644 /home/mypassdata/update.txt
+
+#install at function to commit changes every hour
+sudo apt install at
+at -V
+
+create a bash file to add an commit
+
+sudo nano autocommit.bash
+```
+
+`autocommit.bash`
+```bash
+git add prabh_pass_data.json                                                      
+
+git commit -m "password update/addition"
+
+echo "bash /home/mypassdata/autocommit.bash" | at now + 1 hour
+```
+
+atq
+
+date
+
+atrm 7
+
+echo "bash /home/mypassdata/autocommit.bash" | at now + 1 minute

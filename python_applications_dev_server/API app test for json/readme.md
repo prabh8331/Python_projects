@@ -288,8 +288,14 @@ sudo chmod 644 /home/mypassdata/prabh_pass_data.json
 
 
 sudo nano update.txt
-sudo chown www-data:www-data /home/mypassdata/update.txt
-sudo chmod 644 /home/mypassdata/update.txt
+# sudo chown www-data:www-data /home/mypassdata/update.txt
+# sudo chmod 644 /home/mypassdata/update.txt
+
+sudo chown prabh:www-data /home/mypassdata/update.txt
+sudo chmod ug+rwx /home/mypassdata/update.txt
+
+
+
 
 #install at function to commit changes every hour
 sudo apt install at
@@ -316,3 +322,17 @@ date
 atrm 7
 
 echo "bash /home/mypassdata/autocommit.bash" | at now + 1 minute
+
+
+
+
+```bash
+######look git log and go to the older version of the file
+
+git log --oneline -n 5
+
+git show 2666b37:prabh_pass_data.json
+
+git show f426abc:prabh_pass_data.json
+
+```

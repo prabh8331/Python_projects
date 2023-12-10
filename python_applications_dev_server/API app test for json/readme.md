@@ -335,4 +335,8 @@ git show 2666b37:prabh_pass_data.json
 
 git show f426abc:prabh_pass_data.json
 
+git checkout f426abc
+
+git checkout master
+
 ```

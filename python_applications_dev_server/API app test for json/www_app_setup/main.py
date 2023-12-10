@@ -27,10 +27,20 @@ def get_data():
 # API endpoint to update JSON data
 @app.route('/api/update_data', methods=['POST'])
 def update_data():
+    website_name = request.args.get('website_name')
+    
+    if website_name is None:
+        return jsonify({'error': 'Website name not provided'}), 400
+    
     new_data = request.json
     current_data = read_json()
     current_data.update(new_data)
     write_json(current_data)
+    
+    file_path = '/home/mypassdata/update.txt'
+    with open(file_path, 'w') as update_file:
+        update_file.write(website_name)
+    
     return jsonify({'message': 'Data updated successfully'})
 
 if __name__ == '__main__':

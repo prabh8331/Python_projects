@@ -1,8 +1,18 @@
 import requests
 from datetime import datetime, timedelta
-
+import os
 import pytz
 
+
+user_name = os.environ.get("mypassappuser")
+user_code = os.environ.get("mypassappcode")
+timeout = 10
+pass_app_url = os.environ.get("mypassappurl")
+get_data_url = pass_app_url + "get_data"
+response = requests.get(get_data_url, auth=(user_name, user_code), timeout=timeout)
+pass_data = response.json()
+
+google_app = pass_data["prabh8331@gmail.com"]["google_app"]
 
 ##### API request to iss current location api
 
@@ -94,6 +104,8 @@ try :
 except FileNotFoundError:
     with open("/home/coder/project/google_app_pass.txt") as login:
         password=login.readlines()[1].strip()
+
+password=google_app
 
 if is_iss_overhead() and is_night():
 

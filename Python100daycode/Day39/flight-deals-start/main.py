@@ -38,7 +38,8 @@ paramaters = {
     "date_to" : "20/01/2024",
     "limit" : 2,
     "sort" : "price",
-    "curr": "INR"
+    "curr": "INR",
+    "partner_market" : "in"
 }
 
 response = requests.get(search_endpoint, params=paramaters, headers=headers, timeout=10)

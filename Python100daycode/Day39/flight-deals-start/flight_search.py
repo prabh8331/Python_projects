@@ -15,8 +15,9 @@ class FlightSearch:
             "apikey" : self.tequila_flight_api
         }
 
+
     def get_IATA(self,city):
-        """Gets the data"""
+        """Gets the IATA code for provided city"""
         
         parameters = {
             "term" : city
@@ -24,15 +25,19 @@ class FlightSearch:
         
         response = requests.get(self.location_endpoint, params=parameters, headers=self.headers, timeout=10)
         data = response.json()
-        return data["locations"][0]["code"]
+        if data["locations"][0]["code"] is None:
+            return data["locations"][1]["code"]
+        else:
+            return data["locations"][0]["code"]
 
 
-    def get_price(self, fly_from, fly_to):
+    def get_price(self, fly_from, fly_to, date_from, date_to):
+        """Get price"""
         parameters = {
             "fly_from" : fly_from,
             "fly_to" : fly_to,
-            "date_from" : "21/12/2023",
-            "date_to" : "20/01/2024",
+            "date_from" : date_from,
+            "date_to" : date_to,
             "limit" : 2,
             "sort" : "price",
             "curr": "INR",
@@ -40,8 +45,4 @@ class FlightSearch:
         }
 
         response = requests.get(self.search_endpoint, params=parameters, headers=self.headers, timeout=10)
-        data = response.json()
-        print(data["data"][0]["local_departure"])
-        print(data["data"][0]["local_arrival"])
-        print(data["data"][0]["price"])
-        print(data["data"][0]["duration"])
+        return response.json()

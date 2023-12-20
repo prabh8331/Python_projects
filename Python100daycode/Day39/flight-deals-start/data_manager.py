@@ -16,16 +16,12 @@ class DataManager:
         self.sheety_url = "https://api.sheety.co/69ff39b78b52b370199fe9f25bb1ec09/flightDeals/prices"
 
     def get_data(self):
-        # response = requests.get(url=self.sheety_url,headers=self.headers_sheety,timeout=self.timeout)
-        data  = {'prices': [{'city': 'Paris', 'iataCode': '', 'lowestPrice': 54, 'id': 2}, 
-                            {'city': 'Berlin', 'iataCode': '', 'lowestPrice': 42, 'id': 3}, 
-                            {'city': 'Tokyo', 'iataCode': '', 'lowestPrice': 485, 'id': 4}, 
-                            {'city': 'Sydney', 'iataCode': '', 'lowestPrice': 551, 'id': 5}, 
-                            {'city': 'Istanbul', 'iataCode': '', 'lowestPrice': 95, 'id': 6}, 
-                            {'city': 'Kuala Lumpur', 'iataCode': '', 'lowestPrice': 414, 'id': 7}, 
-                            {'city': 'New York', 'iataCode': '', 'lowestPrice': 240, 'id': 8}, 
-                            {'city': 'San Francisco', 'iataCode': '', 'lowestPrice': 260, 'id': 9}, 
-                            {'city': 'Cape Town', 'iataCode': '', 'lowestPrice': 378, 'id': 10}]}
-        return data
-        # return response.json()
+        response = requests.get(url=self.sheety_url,headers=self.headers_sheety,timeout=self.timeout)
+        return response.json()
+    
+    def put_data(self,id,city,iataCode):
+        
+        new_entry = {'id': id, 'city': city, 'iataCode': iataCode}
+        data_post ={'price': new_entry}
+        response = requests.put(url=self.sheety_url+f"/{id}", json=data_post, headers=self.headers_sheety,timeout=10)
     

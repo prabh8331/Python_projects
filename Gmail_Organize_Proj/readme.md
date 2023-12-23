@@ -37,12 +37,15 @@ As the number of emails continued to grow, I found it challenging to keep track 
        2. Name --> "Desktop client 1"
        3. click on "CREATE"
        4. click on "DOWNLOAD" it will download json file
-       5. click on DONE    
 
-* Create a new project and enable the Gmail API
-* Create credentials (OAuth client ID) and download JSON file
+### Install Libraries for this project
 
 ```bash
 pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
 ```
 
+### Python to fetch data
+Refer my pyhton code to fetch data
+
+### Categorize domain in Excel
+Refer my Domain_analysis.xlsx file for my analysis

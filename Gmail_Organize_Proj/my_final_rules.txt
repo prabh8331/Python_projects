@@ -1,0 +1,387 @@
+<--------- Final rules ------------->
+
+Bank&UPI
+@axisdirect.in OR @digital.axisbankmail.com OR @alerts.axisbankmail.in OR @axisbank.com OR @service.axisbankmail.com OR @gyftr.com OR @5paisa.com OR @updates.5paisa.com OR @5paisa.co.in OR @communications.sbi.co.in OR @alerts.sbi.co.in OR @sbi.co.in OR @phonepe.com OR @hdfcbank.net OR @hdfc.com OR @service.icicipruamc.com OR @sodexobenefitsindia.in OR @cardinfo.sodexo.in OR @sodexo.com
+
+
+From someone
+@gmail.com 
+
+
+E-learning Platforms
+@updates.upgrad.com OR @hello.upgrad.com OR @upgrad.com OR @updates.upgradabroad.com OR @support.upgrad.com OR @admissions.upgrad.com OR @engage.upgradabroad.com OR @e.udemymail.com OR @students.udemy.com OR @email.udemy.com OR @course.mygreatlearning.com OR @greatlearning.in OR @learn.mygreatlearning.com OR @mygreatlearning.com OR @academy.greatlearning.in OR @greatlakes.edu.in OR @kaggle.com OR @edx.org OR @udacity.com OR @m.mail.coursera.org OR @email.coursera.org OR @t.mail.coursera.org OR @hackerrankmail.com OR @hackerrankforwork.com OR @hackerrank.com OR @mkt.databricks.com OR @datacamp.com OR @databricks.com OR @data.tableau.com OR @dataaisummit.com OR @itr.mail.codecademy.com OR @leetcode.com OR @kaggle.intercom-mail.com
+
+Social Media
+@zoom.us OR @twitter.com OR @updates.internshala.com OR @ibm.com OR @hirist.com OR @naukri.com OR @pangaeax.com OR @e.linkedin.com OR @linkedin.com OR @discord.com OR @github.com OR @quora.com OR @youtube.com OR @facebookmail.com 
+
+
+Newsletter
+@news.edx.org OR @nse.co.in OR @discountknow.com OR @equitymaster.com OR @dailynews-express.com OR @mail-responce.com OR @analyticsindiamag.com OR @monarchic.in OR @pinemail.in OR @newfashionadda.com OR @tiagomail.in OR @imf.org OR @internationalmonetaryfund.org OR @updates.imf.org OR @e.shutterstock.com OR @mail.goodreads.com 
+
+
+Shopping & Ent
+@audible.in OR @amazon.com OR @amazon.in OR @primevideo.com OR @marketplace.amazon.in OR @mail.amazon.jobs OR @amazonpay.in OR @business.amazon.in OR @gc.email.amazon.in OR @amazonaws.com OR @aws.amazon.com OR @amazon.it OR @myntra.com OR @muscleblaze.in OR @n.myprotein.com OR @email.decathlon.in OR @myntra.com OR @indiamart.com OR @funmegamart.com OR @thekeenshop.com OR @moments.fnp.com OR @ncpmailer.asianpaints.com OR @mail.blinkist.com OR @fnp.com OR @join.netflix.com OR @mailer.netflix.com OR @d2h.com OR @communications.fnp.com OR @ncb.flipkart.com OR @flipkart.com 
+
+
+Commute
+@marketing.goindigo.in OR @web-spicejet.com OR @ixigo.com OR @uber.com OR @cleartrip.com OR @mailer.airtel.com OR @updates.airtel.com OR @jio.com OR @zoomcar.com OR @goindigo.in OR 
+
+
+
+etc....
+
+
+
+<--------Initial itteration Old -->>>>
+
+Rule1
+@axisdirect.in OR @digital.axisbankmail.com OR @alerts.axisbankmail.in OR @axisbank.com OR info@digital.axisbankmail.com OR alerts@axisbank.com OR info@alerts.axisbankmail.in OR statements@axisbank.com OR service@axisdirect.in OR cc.statements@axisbank.com OR axisbankspends@gyftr.com OR services@axisdirect.in OR secure.services@axisbank.com OR noreply-paypro.support@axisbank.com OR axisbank@service.axisbankmail.com OR Services@axisdirect.in
+axisdirect.in
+digital.axisbankmail.com 
+alerts.axisbankmail.in
+axisbank.com
+digital.axisbankmail.com
+axisbank.com
+alerts.axisbankmail.in
+axisbank.com
+axisdirect.in
+axisbank.com
+gyftr.com
+axisdirect.in
+axisbank.com
+axisbank.com
+service.axisbankmail.com
+axisdirect.in
+
+Rule2
+@5paisa.com OR statements@5paisa.com OR info@updates.5paisa.com
+5paisa.com
+5paisa.com
+updates.5paisa.com
+
+Rule3
+@communications.sbi.co.in OR @alerts.sbi.co.in OR @sbi.co.in OR yonobysbi@alerts.sbi.co.in OR dgm.crpd@communications.sbi.co.in OR yonosbi@alerts.sbi.co.in OR SBIREWARDZ@communications.sbi.co.in OR YONOSBI@communications.sbi.co.in OR cbssbi.cas@alerts.sbi.co.in OR sbi@communications.sbi.co.in OR noreply@communications.sbi.co.in OR SBI@communications.sbi.co.in
+communications.sbi.co.in
+alerts.sbi.co.in
+sbi.co.in
+alerts.sbi.co.in
+communications.sbi.co.in
+alerts.sbi.co.in
+communications.sbi.co.in
+communications.sbi.co.in
+alerts.sbi.co.in
+communications.sbi.co.in
+communications.sbi.co.in
+communications.sbi.co.in
+
+Rule4
+@audible.in OR @amazon.com OR @amazon.in OR aws-apj-marketing@amazon.com OR no-reply@primevideo.com OR store-news@amazon.com OR aws-india-marketing@amazon.com OR store-news@amazon.in
+audible.in
+amazon.com
+amazon.in
+amazon.com
+primevideo.com
+amazon.com
+amazon.com
+amazon.in
+
+Rule5
+student@updates.internshala.com OR talent@ibm.com OR info@hirist.com OR info@naukri.com OR admin@pangaeax.com OR linkedin@e.linkedin.com OR messages-noreply@linkedin.com OR newsletters-noreply@linkedin.com OR updates-noreply@linkedin.com OR invitations@linkedin.com OR notifications-noreply@linkedin.com
+updates.internshala.com
+ibm.com
+hirist.com
+naukri.com
+pangaeax.com
+e.linkedin.com
+linkedin.com
+linkedin.com
+linkedin.com
+linkedin.com
+linkedin.com
+
+Rule6
+@vtprealty.in OR noreply@vtprealty.in OR crm68@vtprealty.in OR crm31@vtprealty.in OR rohitsawarkar@hdfcsales.com OR Manpreet@brickfolio.in
+vtprealty.in
+vtprealty.in
+vtprealty.in
+vtprealty.in
+rohitsawarkar@hdfcsales.com
+Manpreet@brickfolio.in
+
+Rule7
+@updates.upgrad.com OR @hello.upgrad.com OR @upgrad.com OR info@updates.upgrad.com OR info@updates.upgradabroad.com OR  referandearn@support.upgrad.com OR alerts@updates.upgrad.com OR alerts@admissions.upgrad.com
+updates.upgrad.com
+hello.upgrad.com
+upgrad.com
+updates.upgrad.com
+updates.upgradabroad.com
+support.upgrad.com
+updates.upgrad.com
+admissions.upgrad.com
+
+Rule8
+@e.udemymail.com OR no-reply@e.udemymail.com OR hello@students.udemy.com
+e.udemymail.com
+e.udemymail.com
+students.udemy.com
+
+Rule9
+@course.mygreatlearning.com OR @greatlearning.in OR aiml@course.mygreatlearning.com OR microsoft-gen-ai@learn.mygreatlearning.com OR upskill@course.mygreatlearning.com OR kannan.chandran@greatlearning.in OR abhishek.kumar2@greatlearning.in OR no-reply@greatlearning.in OR learners_success@greatlearning.in OR info@mygreatlearning.com OR mounika@greatlearning.in OR mds.deakin@course.mygreatlearning.com OR user@techgig.com
+course.mygreatlearning.com
+greatlearning.in
+course.mygreatlearning.com
+learn.mygreatlearning.com
+course.mygreatlearning.com
+greatlearning.in
+greatlearning.in
+greatlearning.in
+greatlearning.in
+mygreatlearning.com
+greatlearning.in
+course.mygreatlearning.com
+techgig.com
+
+Rule10
+mailers@marketing.goindigo.in OR spicejet@web-spicejet.com
+marketing.goindigo.in
+web-spicejet.com
+
+Rule11
+support@bulksms.com OR hello@bulksms.com OR api@nutritionix.com OR info@kiwi.com OR teamtwilio@team.twilio.com OR api-team@vonage.com OR tequila.support@kiwi.com
+bulksms.com
+bulksms.com
+nutritionix.com
+kiwi.com
+team.twilio.com
+vonage.com
+kiwi.com
+
+Rule12
+@analyticsvidhya.com OR @datacamp.com OR @corporatefinanceinstitute.com OR @mkt.databricks.com OR @academia-mail.com OR @techgig.com OR no-reply@geeksforgeeks.org OR learn@itr.mail.codecademy.com OR newsletter@pangaeax.com OR expertspeak@techgig.com OR noreply@kaggle.com OR contest@techgig.com OR updates@thinkrobotics.com
+analyticsvidhya.com
+datacamp.com
+corporatefinanceinstitute.com
+mkt.databricks.com
+academia-mail.com
+techgig.com
+geeksforgeeks.org
+itr.mail.codecademy.com
+pangaeax.com
+techgig.com
+kaggle.com
+techgig.com
+thinkrobotics.com
+
+Rule13
+@muscleblaze.in OR @n.myprotein.com OR @email.decathlon.in OR @myntra.com OR @indiamart.com OR @funmegamart.com OR @thekeenshop.com OR info@n.myprotein.com OR happiness@moments.fnp.com OR noreply-in@email.decathlon.in OR hello@ncpmailer.asianpaints.com OR hello@mail.blinkist.com
+muscleblaze.in
+n.myprotein.com
+email.decathlon.in
+myntra.com
+indiamart.com
+funmegamart.com
+thekeenshop.com
+n.myprotein.com
+moments.fnp.com
+email.decathlon.in
+ncpmailer.asianpaints.com
+mail.blinkist.com
+
+
+Rule14
+phonepe.com
+hdfcbank.net
+hdfc.com
+hdfcbank.net
+service.icicipruamc.com
+sodexobenefitsindia.in
+cardinfo.sodexo.in
+sodexobenefitsindia.in
+sodexobenefitsindia.in
+sodexo.com
+sodexo.com
+
+
+
+Rule15
+imf.org
+imf.org
+internationalmonetaryfund.org
+updates.imf.org
+
+
+Rule16
+updates.swiggy.in
+uber.com
+mailer.airtel.com
+ncpmailer.asianpaints.com
+ixigo.com
+swiggy.in
+joinfitapp.com
+swiggy.in
+officesuite.com
+accounts.mobisystems.com
+in.passport.xiaomi.com
+joinfitapp.com
+email.nianticlabs.com
+mailer.airtel.com
+updates.airtel.com
+join.netflix.com
+discord.com
+youtube.com
+uber.com
+engage.canva.com
+pcloud.email
+
+
+Rule17
+notify.cloudflare.com
+cloudflare.com
+
+
+
+Rule18
+cutshort.io
+glassdoor.com
+fbworkmail.com
+talent.com
+neuvoo.com
+timesjobs.com
+naukrilegion.com
+gradjago.com
+indeed.com
+edx.org
+myways.in
+internshala.com
+profiles.naukrirms.com
+linkedin.com
+e.linkedin.com
+naukri.com
+freshersindia.in
+freshersworld.com
+
+
+
+Rule19
+news.edx.org
+nse.co.in
+discountknow.com
+equitymaster.com
+dailynews-express.com
+mail-responce.com
+analyticsindiamag.com
+monarchic.in
+pinemail.in
+newfashionadda.com
+tiagomail.in
+
+
+Rule20
+f.change.org
+e.change.org
+bhumi.ngo
+
+
+Rule21
+sampark.gov.in
+
+
+Rule22
+global-mail-serv.com
+google.com
+accounts.google.com
+
+
+Rule23
+hudl.com
+bvucoep.edu.in
+ubique-systems.com
+cotiviti.com
+
+
+Rule24
+foodmegamart.in
+env.envmails.com
+
+
+
+
+noreply@fithomegym.com
+
+prabh8331@gmail.com
+
+
+engage.canva.com
+jio.com
+mailer.netflix.com
+facebookmail.com
+em.oyorooms.com
+youtube.com
+quora.com
+unacademy.com
+zoomcar.com
+twitter.com
+d2h.com
+bseindia.in
+github.com
+
+
+
+
+
+@engage.canva.com OR @jio.com OR @mailer.netflix.com OR @facebookmail.com OR @em.oyorooms.com OR @youtube.com OR @quora.com OR @unacademy.com OR @zoomcar.com OR @twitter.com OR @d2h.com OR @bseindia.in OR @github.com
+
+@phonepe.com OR @hdfcbank.net OR @hdfc.com OR information@hdfcbank.net OR info@service.icicipruamc.com OR communications@sodexobenefitsindia.in OR do-not-reply@cardinfo.sodexo.in OR communication@sodexobenefitsindia.in OR CEO@sodexobenefitsindia.in OR do-not-reply.in@sodexo.com OR activation.in@sodexo.com
+
+do_not_reply@imf.org OR @imf.org OR @internationalmonetaryfund.org OR @updates.imf.org
+
+@updates.swiggy.in OR @uber.com OR @mailer.airtel.com OR @ncpmailer.asianpaints.com OR @ixigo.com OR @swiggy.in OR @joinfitapp.com OR no-reply@swiggy.in OR notification@officesuite.com OR notification@accounts.mobisystems.com OR noreply@in.passport.xiaomi.com OR noreply@joinfitapp.com OR pokemongo@email.nianticlabs.com OR Impinfo@mailer.airtel.com OR Impinfo@updates.airtel.com OR info@join.netflix.com OR notifications@discord.com OR no-reply@youtube.com OR uber@uber.com OR marketing@engage.canva.com OR team@pcloud.email
+
+noreply@notify.cloudflare.com OR cfmarketing@cloudflare.com
+
+@cutshort.io OR @glassdoor.com OR @fbworkmail.com OR @talent.com OR @neuvoo.com OR @timesjobs.com OR @naukrilegion.com OR @gradjago.com OR @indeed.com OR @edx.org OR @myways.in OR @internshala.com OR @profiles.naukrirms.com OR @linkedin.com OR @e.linkedin.com OR @naukri.com OR @freshersindia.in OR @freshersworld.com
+
+@news.edx.org OR @nse.co.in OR @discountknow.com OR @equitymaster.com OR @dailynews-express.com OR @mail-responce.com OR @analyticsindiamag.com OR @monarchic.in OR @pinemail.in OR @newfashionadda.com OR @tiagomail.in
+
+
+@f.change.org OR @e.change.org OR @bhumi.ngo
+
+@sampark.gov.in
+
+@global-mail-serv.com OR @google.com OR @accounts.google.com
+
+@hudl.com OR @bvucoep.edu.in OR @ubique-systems.com OR @cotiviti.com
+
+@foodmegamart.in OR @env.envmails.com
+
+
+
+
+
+Finance:
+@axisdirect.in OR @digital.axisbankmail.com OR @alerts.axisbankmail.in OR @axisbank.com OR @service.axisbankmail.com OR @5paisa.com OR @updates.5paisa.com OR @5paisa.co.in OR @communications.sbi.co.in OR @alerts.sbi.co.in OR @sbi.co.in OR @icicipruamc.com OR @hdfc.com OR @payu.in OR @paypal.com OR @amazonpay.in OR @service.alibaba.com OR @airtelpaymentsbank.co.in OR @easemytrip.com OR @nvidia.com OR @sodexo.com OR @icicilombard.com OR @hdfcergo.email OR @sodexo.ipsos-online.com OR @nse.co.in OR @infosys.com
+
+Shopping:
+@audible.in OR @amazon.com OR @amazon.in OR @primevideo.com OR @marketplace.amazon.in OR @mail.amazon.jobs OR @amazonpay.in OR @business.amazon.in OR @gc.email.amazon.in OR @amazonaws.com OR @aws.amazon.com OR @amazon.it OR @zomato.com OR @swiggy.in OR @myntra.com OR @flipkart.com OR @bigshyft.co.in OR @spicejet.com OR @dominos.co.in OR @oyo.com OR @fnp.com OR @box8.in OR @olacabs.com OR @zohoaccounts.in OR @pokemongolive.com OR @o2.pl OR @jabong.com OR @snapdeal.com OR @makemytrip.com OR @goibibo.com OR @ixigo.com
+
+Job and Learning:
+@updates.internshala.com OR @ibm.com OR @hirist.com OR @naukri.com OR @pangaeax.com OR @e.linkedin.com OR @linkedin.com OR @updates.upgrad.com OR @hello.upgrad.com OR @upgrad.com OR @updates.upgradabroad.com OR @support.upgrad.com OR @admissions.upgrad.com OR @engage.upgradabroad.com OR @e.udemymail.com OR @students.udemy.com OR @email.udemy.com OR @hackerrankmail.com OR @hackerearth.com OR @indeed.com OR @upgrad.com OR @tcs.com OR @hcl.com OR @infosys.com
+
+Flights:
+@marketing.goindigo.in OR @web-spicejet.com OR @goindigo.in
+
+Entertainment:
+@netflix.com OR @primevideo.com OR @audible.in OR @spotify.com OR @zomato.com OR @swiggy.in OR @zomato.com OR @ubereats.com OR @snapchat.com
+
+Tech Companies:
+@google.com OR @gmail.com OR @microsoft.com OR @yahoo.com OR @apple.com OR @slack.com OR @github.com OR @dropbox.com OR @ubuntu.com OR @ibm.com OR @nvidia.com OR @aws.amazon.com OR @amazonaws.com OR @zoom.us OR @github.com OR @discord.com
+
+
+News and Magazines:
+@thehindu.co.in OR @dailynews-express.com OR @analyticsindiamag.com OR @news.edx.org
+
+Social Media:
+@facebookmail.com OR @twitter.com OR @instagram.com OR @linkedin.com OR @discord.com OR @snapchat.com
+
+Travel:
+@makemytrip.com OR @goibibo.com OR @ixigo.com OR @swiggy.in

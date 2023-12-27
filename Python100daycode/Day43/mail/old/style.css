@@ -1,0 +1,67 @@
+.box-outline {
+    width: 510px;
+    border-width: 2px;
+    border-style: solid; /* Use a dotted line */
+    border-color: black; /* Red border color */
+    border-radius: 00px; /* 10px rounded corners */
+    padding: 10px;
+    background-color: #31006f
+  }
+  
+.box-outline_main {
+    border-width: 2px;
+    width: 534px;
+    border-style: solid; /* Use a dotted line */
+    border-color: black; /* Red border color */
+    border-radius: 0px; /* 10px rounded corners */
+    padding: 2px;
+  }
+
+  .logo-heading-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 60px; /* Adjust the width of the logo as needed */
+    height: 60px; /* Adjust the height of the logo as needed */
+    margin-right: 10px; /* Add some margin to separate the logo from the heading */
+  }
+  
+  .heading {
+    margin: 0; /* Remove default margin on the heading */
+    color: white;
+    font-family: 'Arial';
+  }
+  
+  #bold {
+    font-weight: bold;
+  }
+
+  #rn {
+    color: white;
+    font-family: 'Arial';
+    font-weight: normal;
+  }
+
+  #irn {
+    color: #ec008c;
+  }
+
+  #body {
+    color: #7c77ad;
+  }
+
+  #us {
+    color: #9579d3;
+  }
+
+  #endname {
+    font-size: 20px;
+    color: #333;
+  }
+
+  #property {
+    font-style: italic;
+    font-size: 15px;
+  }
